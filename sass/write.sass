@@ -1,0 +1,53 @@
+@import 'responsive'
+
+.write
+	position: relative
+
+	&__holder
+		+media(mdx)
+			padding-top: 200px
+
+	&__form
+		max-width: 660px
+		margin: 0 auto
+		padding: 0px 30px
+		+media(mdx)
+			padding: 0 15px
+			padding-top: 0px
+
+	&__item
+		padding-bottom: 15px
+		&:last-child
+			padding-bottom: 48px
+
+	&__btn
+		cursor: pointer
+		display: block
+		max-width: 150px
+		width: 100%
+		font-size: 14px
+		line-height: 1.2
+		color: #333333
+		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+		background-color: #fff
+		border: none
+		outline: none
+		border-radius: 5px
+		text-align: center
+		padding: 17px 5px
+		margin: 0 auto
+		margin-bottom: 45px
+		font-weight: 700
+		font-family: Roboto
+		transition: 0.25s background-color, 0.25s color
+		&:disabled
+			text-decoration: line-through
+
+		&:hover:not(:disabled)
+			background-color: #7C8D63
+			color: #fff
+			
+	&__error
+		color: #d8352a
+		padding-bottom: 20px
+		font-weight: 700

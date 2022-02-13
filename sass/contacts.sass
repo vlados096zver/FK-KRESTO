@@ -1,0 +1,57 @@
+@import 'responsive'
+
+.contacts
+
+	&__wrap
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		margin: 0 -15px
+
+	&__item
+		display: flex
+		align-items: center
+		width: max-content
+		font-size: 36px
+		line-height: 1.2
+		color: #000000
+		background-repeat: no-repeat
+		background-position: left center
+		padding-left: 34px
+		margin: 0 15px
+		font-weight: 100
+		margin-bottom: 42px
+		+media(mdx)
+			font-size: 30px
+		+media(sm)
+			font-size: 25px
+
+		&--phone
+			background-image: url(../img/icons/phone.svg)
+			background-size: 20px
+			
+
+		&--email
+			background-image: url(../img/icons/email.svg)
+			background-size: 20px 15px
+
+	&__address
+		font-size: 24px
+		line-height: 1.2
+		color: #000000
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 52px
+		font-weight: 400
+		+media(sm)
+			font-size: 20px
+
+	&__text
+		margin-bottom: 56px
+		p
+			font-size: 24px
+			line-height: 1.2
+			color: #000000
+			text-align: center
+			text-transform: uppercase
+			font-weight: 200

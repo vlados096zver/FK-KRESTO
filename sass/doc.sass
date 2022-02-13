@@ -1,0 +1,66 @@
+@import 'responsive'
+
+.doc
+	.fp-tableCell
+		vertical-align: top
+
+	&__wrap
+		+media(mdx)
+			padding-top: 140px
+		
+	&__item
+		display: flex	
+		flex-wrap: wrap
+		padding: 85px 44px
+		+media(mdx)
+			display: block
+			padding: 40px 15px
+		&:nth-child(odd)
+			background-color: #FFF6F1
+
+		&:nth-child(even)
+			background-color: #F4E9E3
+
+	&__row
+		display: flex	
+		align-items: center
+		width: 140px	
+		+media(mdx)
+			margin: 0 auto
+
+	&__title
+		width: calc(100% - 140px)
+		font-size: 18px	
+		line-height: 1.67	
+		color: #0F2742
+		padding-right: 45px	
+		font-weight: 300	
+		+media(mdx)
+			width: 100%
+			text-align: center
+			margin-bottom: 35px
+
+	&__col
+		font-size: 24px	
+		line-height: 1.25
+		color: #0F2742
+		text-transform: uppercase	
+		font-weight: 100	
+		&:not(:last-child)
+			margin-right: 18px	
+
+	&__col
+		display: block	
+		
+		background-size: 30px
+		background-repeat: no-repeat
+		&--details,
+		&--load
+			width: 30px	
+			height: 30px	
+
+		&--details
+			background-image: url(../img/icons/details.svg)
+
+		&--load
+			background-image: url(../img/icons/load.svg)

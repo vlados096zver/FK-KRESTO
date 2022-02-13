@@ -1,0 +1,96 @@
+@import 'responsive'
+
+
+.info
+	&__wrap
+		max-width: 860px
+		margin: 0 auto
+		padding: 50px 30px	
+		+media(mdx)
+			padding-top: calc(160px + 50px)
+
+	&--inner
+		.info__wrap
+			max-width: 100%
+			padding: 50px 60px
+			+media(mdx)
+				padding: 0 15px
+				padding-bottom: 40px
+				padding-top: 200px
+
+		.title
+			text-align: left
+			font-weight: 400
+
+		.info__text
+			p
+				text-align: left
+
+		.doc__wrap
+			margin-top: 70px
+			+media(mdx)
+				padding-top: 0px
+				margin-top: 50px
+
+	&__title
+		font-size: 48px
+		line-height: 1.2
+		color: #453232
+
+	&__bg
+		margin-bottom: 48px
+		img
+			display: block
+
+	&__text
+		p
+			font-size: 18px
+			line-height: 1.67
+			color: #453232
+			text-align: center
+			+media(mdx)
+				font-size: 17px
+			+media(sm)
+				font-size: 16px
+				line-height: 1.25
+			&:not(:last-child)
+				padding-bottom: 1.5em
+
+		h1
+			font-size: 24rem
+
+		h2
+			font-size: 22rem
+
+		h3
+			font-size: 18rem
+
+		h4, h5, h6
+			font-size: 16rem
+			line-height: 1.29	
+
+		h1, h2, h3, h4, h5, h6
+			color: #453232
+			padding-bottom: 2px
+			font-weight: 500
+
+		ul, ol
+			padding: 0px
+			margin: 0px
+			padding-bottom: 1.5em
+			li
+				position: relative
+				font-size: 1.25rem
+				line-height: 1.25
+				color: #453232
+				margin-bottom: 5px
+				font-weight: normal
+
+		ol
+			li
+				list-style-position: inside
+
+		a
+			display: inline-block
+			color: #453232
+			margin-bottom: 12px
