@@ -4,15 +4,17 @@
 	position: relative
 
 	&__holder
+		padding: 40px 0
 		+media(mdx)
 			padding-top: 200px
+			padding-bottom: 20px	
 
 	&__form
 		max-width: 660px
 		margin: 0 auto
 		padding: 0px 30px
 		+media(mdx)
-			padding: 0 15px
+			padding: 0 40px
 			padding-top: 0px
 
 	&__item
@@ -27,9 +29,10 @@
 		width: 100%
 		font-size: 14px
 		line-height: 1.2
-		color: #333333
-		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
-		background-color: #fff
+		color: #fff
+		background-color: #453333
+		box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2)
+		border-radius: 5px
 		border: none
 		outline: none
 		border-radius: 5px
@@ -44,7 +47,7 @@
 			text-decoration: line-through
 
 		&:hover:not(:disabled)
-			background-color: #7C8D63
+			background-color: #c7afa1
 			color: #fff
 			
 	&__error
